@@ -11,5 +11,6 @@ create table warsaw_transport.raw_bus_positions (
 PARTITION BY ingestion_date
 CLUSTER BY request_time_local
 OPTIONS (
-    description = 'Positions of Buses in Warsaw. Raw data from the API. Ingestion date is date of request_time_local.'
+    description = 'Positions of Buses in Warsaw. Raw data from the API. Ingestion date is date of request_time_local.',
+    partition_expiration_days = NULL
 );
