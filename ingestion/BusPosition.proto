@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message BusPosition {
+    string request_time_local = 1;
+    int32 ingestion_date = 2;
+    string position_datetime = 3;
+    string line = 4;
+    string brigade = 5;
+    string vehicle_number = 6;
+    double latitude = 7;
+    double longitude = 8;
+}
